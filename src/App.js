@@ -1,5 +1,10 @@
-export default AppendMode(){
+import {BrowserRouter} from 'react-router-dom';
+import RoutesApp from './routes';
+
+export default function App(){
   return(<div>
-      Pagina App
+      <BrowserRouter>
+        <RoutesApp/>
+      </BrowserRouter>
     </div>)
 }
